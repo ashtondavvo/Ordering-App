@@ -1,0 +1,21 @@
+package server;
+
+import java.io.IOException;
+import java.net.*;
+
+public class Server {
+	
+	//private ServerSocket server;
+	
+	public static void main(String arg[]){
+		try {
+			ServerSocket server = new ServerSocket(3000);
+			Socket s = server.accept();
+			System.out.println("Connected");
+		} catch (IOException e) {
+			System.out.println("There was a problem in creating a ServerSocket on the port 3000");
+			e.printStackTrace();
+		}
+	}
+	
+}

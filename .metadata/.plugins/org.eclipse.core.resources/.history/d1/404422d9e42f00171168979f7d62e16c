@@ -1,0 +1,18 @@
+package main;
+
+import javafx.application.Application;
+import javafx.scene.Parent;
+import javafx.stage.Stage;
+
+public class Main extends Application{
+	
+	
+	private Parent root;
+	
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		root = FXMLLoader.load(getClass().getResource("Server.fmxl"));
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package server;
+
+import java.io.IOException;
+import java.net.*;
+
+public class Server {
+	
+	//private ServerSocket server;
+	
+	public static void main(String arg[]){
+		try {
+			ServerSocket server = new ServerSocket(3000);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+}

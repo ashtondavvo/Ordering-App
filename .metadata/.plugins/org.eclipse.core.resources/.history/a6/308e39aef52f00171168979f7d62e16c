@@ -1,0 +1,43 @@
+package client;
+
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.*;
+
+public class Client implements Runnable{
+	
+	private Socket socket;
+	private DataOutputStream dos;
+	private DataInputStream dis;
+	private BufferedReader br;
+	private String line;
+	
+	public Client(){
+		try {
+			
+			socket = new Socket("127.0.0.1", 3000);
+			dos = new DataOutputStream(socket.getOutputStream());
+			dis = new DataInputStream(socket.getInputStream());
+		} catch (IOException e) {
+			System.out.println("There was a problem setting up the connection");
+			e.printStackTrace();
+		}
+		
+	}
+
+	public void run() {
+		while(true){
+			try {
+				//line = br.readLine();
+				//dos.writeUTF(line);
+			} catch (IOException e) {
+				System.out.println("Could not read from Client");
+				e.printStackTrace();
+			}
+		}
+		
+	}
+	
+}

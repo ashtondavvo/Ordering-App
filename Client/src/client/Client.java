@@ -1,0 +1,42 @@
+package client;
+
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.*;
+
+public class Client{
+	
+	private Socket socket;
+	private static DataOutputStream dos;
+	private static DataInputStream dis;
+	private BufferedReader br;
+	private String line;
+	
+	public Client(){
+		try {
+			
+			socket = new Socket("localhost", 3000);
+			dos = new DataOutputStream(socket.getOutputStream());
+			dis = new DataInputStream(socket.getInputStream());
+			System.out.println("Connected");
+		} catch (IOException e) {
+			System.out.println("There was a problem setting up the connection");
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void sendToServer(String s){
+		try {
+			System.out.println("This method was called");
+			dos.writeUTF(s);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	
+}

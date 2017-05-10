@@ -1,0 +1,27 @@
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.scene.control.TextArea;
+import javafx.scene.layout.Pane;
+
+public class Controller{
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+    @FXML
+    private TextArea TextArea;
+
+    @FXML
+    private Pane window;
+
+    @FXML
+    void initialize() {
+        assert TextArea != null : "fx:id=\"TextArea\" was not injected: check your FXML file 'Untitled'.";
+        assert window != null : "fx:id=\"window\" was not injected: check your FXML file 'Untitled'.";
+
+    }
+}

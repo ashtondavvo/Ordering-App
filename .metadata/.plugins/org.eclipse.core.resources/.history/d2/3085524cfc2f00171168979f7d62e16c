@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TextField fx:id="tableNumber" layoutX="180.0" layoutY="23.0" promptText="Enter Table Numeber" text="Enter Table Number" />
+      <Label fx:id="tableNumberText" layoutX="14.0" layoutY="28.0" prefHeight="17.0" prefWidth="156.0" text="Table Number" />
+      <Label fx:id="orderText" layoutX="121.0" layoutY="58.0" text="Order">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="wakachangiText" layoutX="14.0" layoutY="150.0" text="Wakachangi Lager" />
+      <Label fx:id="tokyoDryText" layoutX="14.0" layoutY="190.0" text="Tokyo Dry" />
+      <Label fx:id="coronaText" layoutX="14.0" layoutY="230.0" text="Corona" />
+      <Label fx:id="heinekenText" layoutX="14.0" layoutY="270.0" text="Heineken" />
+      <Label fx:id="beerText" layoutX="14.0" layoutY="110.0" text="Beer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceText" layoutX="160.0" layoutY="110.0" text="Price">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="amountText" layoutX="281.0" layoutY="110.0" text="Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="wakachangiLagerPrice" layoutX="165.0" layoutY="150.0" text="\$5.00" />
+      <Label fx:id="tokyoDryPrice" layoutX="165.0" layoutY="190.0" text="\$8.00" />
+      <Label fx:id="coronaPrice" layoutX="165.0" layoutY="230.0" text="\$7.00" />
+      <Label fx:id="solPrice" layoutX="165.0" layoutY="470.0" text="\$7.00" />
+      <Label fx:id="macsGoldText" layoutX="14.0" layoutY="310.0" text="Mac's Gold" />
+      <Label fx:id="eportGoldText" layoutX="14.0" layoutY="390.0" text="Export Gold" />
+      <Label fx:id="export33Text" layoutX="14.0" layoutY="430.0" text="Export 33" />
+      <Label fx:id="solText" layoutX="14.0" layoutY="470.0" text="Sol" />
+      <Label fx:id="tuiText" layoutX="14.0" layoutY="350.0" text="Tui" />
+      <Label fx:id="speightsText" layoutX="14.0" layoutY="510.0" text="Speights" />
+      <Label fx:id="lionBrownText" layoutX="14.0" layoutY="550.0" text="Lion Brown" />
+      <Label fx:id="export33Price" layoutX="165.0" layoutY="430.0" text="\$7.00" />
+      <Label fx:id="macsGoldPrice" layoutX="165.0" layoutY="312.0" text="\$5.00" />
+      <Label fx:id="tuiPrice" layoutX="165.0" layoutY="350.0" text="\$5.00" />
+      <Label fx:id="exportGoldPrice" layoutX="162.0" layoutY="390.0" text="\$5.00" />
+      <Label fx:id="speightsPrice" layoutX="165.0" layoutY="510.0" text="\$5.00" />
+      <Label fx:id="lionBrownPrice" layoutX="165.0" layoutY="550.0" text="\$3.00" />
+      <Label fx:id="heinekenPrice" layoutX="165.0" layoutY="270.0" text="\$7.00" />
+      <TextField fx:id="wakachangiLagerAmount" layoutX="281.0" layoutY="145.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <TextField fx:id="tokyoDryAmount" layoutX="281.0" layoutY="185.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <TextField fx:id="coronaAmount" layoutX="281.0" layoutY="225.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <TextField fx:id="heinekenAmount" layoutX="281.0" layoutY="265.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <TextField fx:id="macsGoldAmount" layoutX="281.0" layoutY="307.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <TextField fx:id="tuiAmount" layoutX="281.0" layoutY="345.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <TextField fx:id="exportGoldAmount" layoutX="281.0" layoutY="385.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <TextField fx:id="exportGoldAmount" layoutX="281.0" layoutY="425.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <TextField fx:id="solAmount" layoutX="281.0" layoutY="465.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <TextField fx:id="speightsAmount" layoutX="281.0" layoutY="505.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <TextField fx:id="lionBrownAmount" layoutX="281.0" layoutY="545.0" prefHeight="27.0" prefWidth="66.0" promptText="0" text="0" />
+      <Button fx:id="placeOrder" layoutX="17.0" layoutY="593.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="331.0" text="Place Order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
